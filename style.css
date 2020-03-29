@@ -1,0 +1,63 @@
+/** This is a comment that the browser will ignore,
+* Put your CSS code into this file
+*/
+
+/**THis is the default CSS Style while no manipulation has been done
+
+This uses the default browser settings for font and changes the desired background color
+*/
+
+body {
+	background-color: green;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+	font-size: 18;
+}
+
+/** The text will change when the desired page width is achieved
+
+First width manipulation desired changes the font family to monospace as it changes the font 
+size a bit larger and changes the font color to red and the background color to light blue
+*/
+
+@media (min-width:750px){
+	.responsive{
+		font-family: monospace;
+		font-size: 32;
+		font-style: normal;
+		color: red;
+		background-color: lightblue;
+	}
+}
+
+/** Second width for manipulation changes the font family to Times New Roman as it changes the 
+font size a bit larger and changes the font color to light blue and the background color to red. 
+Also changes the font styl to italics and stretches the font to the expanded setting.
+*/
+*/
+
+@media (min-width:1000px){
+	.responsive{
+		font-size: 48;
+		font-family: "Times New Roman";
+		font-style: italic;
+		font-stretch: expanded;
+		color: lightblue;
+		background-color: red;
+	}
+}
+/** Third manipulation desired for maximum width reached changes the font family to Verdana as 
+it changes the font size to its maximum size desired  and changes the font color to white and the background color to black
+*/
+
+@media (min-width:1200px){
+	.responsive{
+		font-size: 64;
+		font-family: Verdana;
+		color: white;
+		background-color: black;
+	}
+}
